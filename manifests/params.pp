@@ -20,5 +20,8 @@ class ruby::params {
       $ry_packages = ['ruby', 'rubygems', 'ruby-devel', 'ruby-irb', 'ruby-libs', 
                       'ruby-rdoc']
     }
+    ubuntu,debian: {
+      $ry_packages = ['libruby1.8', 'ruby1.8', 'ruby', 'rdoc1.8', 'ri1.8', 'rubygems']
+    }
   }
 }
