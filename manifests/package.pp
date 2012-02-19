@@ -16,9 +16,8 @@
 #   This method should not be called directly.
 #
 class ruby::package {
-  $packages = ['ruby', 'rubygems', 'ruby-devel', 'ruby-irb', 'ruby-libs', 
-               'ruby-rdoc']
-  
+  $packages = ['ruby', 'rubygems', 'ruby-devel', 'ruby-irb', 'ruby-libs']
+
   @package { $ruby::params::ry_packages:
     ensure => 'present', 
     tag    => 'ruby-packages', 
